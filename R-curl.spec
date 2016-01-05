@@ -4,7 +4,7 @@
 #
 Name     : R-curl
 Version  : 0.9.4
-Release  : 8
+Release  : 9
 URL      : http://cran.r-project.org/src/contrib/curl_0.9.4.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/curl_0.9.4.tar.gz
 Summary  : A Modern and Flexible Web Client for R
