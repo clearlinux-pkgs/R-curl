@@ -1,3 +1,13 @@
+1.1
+ - Fix ASAN warning in curl.c (reference after free)
+
+1.0
+ - Fix for FreeBSD
+ - Simplify handle refCount system
+ - Better handle locking to prevent using/modifying open handles
+ - Make unit tests always close connection to prevent 'unused connection' warnings
+ - Add support for interruptions in curl_download()
+
 0.9.7
  - The non-blocking download method is now only used in interactive mode
  - Use options(curl_interrupt = TRUE) to force nonblocking in non-interactive mode
