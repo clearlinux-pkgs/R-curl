@@ -1,3 +1,11 @@
+2.4
+ - Windows: update libcurl to 7.53.1 with libssl 1.0.2k
+ - New form_data() function to POST form with string/raw values with custom conten-type
+ - Fix busy waiting for curl_fetch_stream()
+ - Tweaks for open(con, blocking = FALSE)
+ - Switch memcpy() to memmove() to please valgrind
+ - Assert that curl() connection is only opened in read mode
+
 2.3
  - All interruptable handles now use a global pool to share connections. Fixes #79.
  - Enable interruptable interface by default, even in non-interactive mode.
