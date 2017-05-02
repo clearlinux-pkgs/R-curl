@@ -4,7 +4,7 @@
 #
 Name     : R-curl
 Version  : 2.6
-Release  : 40
+Release  : 41
 URL      : https://cran.r-project.org/src/contrib/curl_2.6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/curl_2.6.tar.gz
 Summary  : A Modern and Flexible Web Client for R
