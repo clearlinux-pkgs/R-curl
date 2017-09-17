@@ -5,3 +5,5 @@ R-knitr
 R-testthat
 R-magrittr
 R-markdown
+R-jsonlite
+R-httpuv

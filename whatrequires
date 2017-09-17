@@ -1,0 +1,5 @@
+# This file contains recursive sources that require this package
+R-devtools
+R-httr
+R-roxygen2
+R-rversions
