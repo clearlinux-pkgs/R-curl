@@ -4,7 +4,7 @@
 #
 Name     : R-curl
 Version  : 3.1
-Release  : 54
+Release  : 55
 URL      : https://cran.r-project.org/src/contrib/curl_3.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/curl_3.1.tar.gz
 Summary  : A Modern and Flexible Web Client for R
@@ -46,11 +46,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1522163348
+export SOURCE_DATE_EPOCH=1523296867
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1522163348
+export SOURCE_DATE_EPOCH=1523296867
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
