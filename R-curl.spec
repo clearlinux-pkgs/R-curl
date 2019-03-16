@@ -4,14 +4,13 @@
 #
 Name     : R-curl
 Version  : 3.3
-Release  : 67
+Release  : 68
 URL      : https://cran.r-project.org/src/contrib/curl_3.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/curl_3.3.tar.gz
 Summary  : A Modern and Flexible Web Client for R
 Group    : Development/Tools
 License  : MIT
 Requires: R-curl-lib = %{version}-%{release}
-Requires: R-spelling
 BuildRequires : R-httpuv
 BuildRequires : R-jsonlite
 BuildRequires : R-knitr
@@ -48,10 +47,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1547138037
+export SOURCE_DATE_EPOCH=1552732477
 
 %install
-export SOURCE_DATE_EPOCH=1547138037
+export SOURCE_DATE_EPOCH=1552732477
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -87,8 +86,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library curl|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  curl || :
 
 
 %files
@@ -124,10 +122,25 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/curl/help/paths.rds
 /usr/lib64/R/library/curl/html/00Index.html
 /usr/lib64/R/library/curl/html/R.css
-/usr/lib64/R/library/curl/libs/symbols.rds
+/usr/lib64/R/library/curl/tests/spelling.R
+/usr/lib64/R/library/curl/tests/testthat.R
+/usr/lib64/R/library/curl/tests/testthat/helper-version.R
+/usr/lib64/R/library/curl/tests/testthat/test-auth.R
+/usr/lib64/R/library/curl/tests/testthat/test-blockopen.R
+/usr/lib64/R/library/curl/tests/testthat/test-certificates.R
+/usr/lib64/R/library/curl/tests/testthat/test-connection.R
+/usr/lib64/R/library/curl/tests/testthat/test-cookies.R
+/usr/lib64/R/library/curl/tests/testthat/test-echo.R
+/usr/lib64/R/library/curl/tests/testthat/test-escape.R
+/usr/lib64/R/library/curl/tests/testthat/test-gc.R
+/usr/lib64/R/library/curl/tests/testthat/test-handle.R
+/usr/lib64/R/library/curl/tests/testthat/test-idn.R
+/usr/lib64/R/library/curl/tests/testthat/test-multi.R
+/usr/lib64/R/library/curl/tests/testthat/test-nonblocking.R
+/usr/lib64/R/library/curl/tests/testthat/test-post.R
+/usr/lib64/R/library/curl/tests/testthat/test-progress.R
+/usr/lib64/R/library/curl/tests/testthat/test-writer.R
 
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/curl/libs/curl.so
-/usr/lib64/R/library/curl/libs/curl.so.avx2
-/usr/lib64/R/library/curl/libs/curl.so.avx512
