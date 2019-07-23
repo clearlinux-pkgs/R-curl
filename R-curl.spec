@@ -4,19 +4,15 @@
 #
 Name     : R-curl
 Version  : 4.0
-Release  : 76
+Release  : 77
 URL      : https://cran.r-project.org/src/contrib/curl_4.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/curl_4.0.tar.gz
 Summary  : A Modern and Flexible Web Client for R
 Group    : Development/Tools
 License  : MIT
 Requires: R-curl-lib = %{version}-%{release}
-BuildRequires : R-httpuv
+Requires: R-jsonlite
 BuildRequires : R-jsonlite
-BuildRequires : R-knitr
-BuildRequires : R-magrittr
-BuildRequires : R-markdown
-BuildRequires : R-testthat
 BuildRequires : buildreq-R
 BuildRequires : curl-dev
 
@@ -46,10 +42,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1563892731
+export SOURCE_DATE_EPOCH=1563897089
 
 %install
-export SOURCE_DATE_EPOCH=1563892731
+export SOURCE_DATE_EPOCH=1563897089
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
