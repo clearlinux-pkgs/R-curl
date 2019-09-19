@@ -1,6 +1,6 @@
 # This file contains recursive sources that require this package
 R-TTR
-R-httpuv
+R-crul
 R-httr
 R-magick
 R-qpdf
@@ -10,9 +10,8 @@ R-rsconnect
 R-rversions
 R-smoother
 R-solrium
+R-testthat
 R-usethis
-R-vcr
 R-webmockr
 R-webutils
 R-wikitaxa
-R-xml2
