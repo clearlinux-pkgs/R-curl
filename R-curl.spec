@@ -4,17 +4,17 @@
 #
 Name     : R-curl
 Version  : 4.2
-Release  : 79
+Release  : 80
 URL      : https://cran.r-project.org/src/contrib/curl_4.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/curl_4.2.tar.gz
 Summary  : A Modern and Flexible Web Client for R
 Group    : Development/Tools
 License  : MIT
 Requires: R-curl-lib = %{version}-%{release}
-Requires: R-jsonlite
 BuildRequires : R-jsonlite
 BuildRequires : buildreq-R
 BuildRequires : curl-dev
+BuildRequires : util-linux
 
 %description
 configurable drop-in replacements for base url() and download.file() with
@@ -42,10 +42,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569851658
+export SOURCE_DATE_EPOCH=1571814487
 
 %install
-export SOURCE_DATE_EPOCH=1569851658
+export SOURCE_DATE_EPOCH=1571814487
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
