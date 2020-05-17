@@ -1,13 +1,10 @@
 # This file contains recursive sources that require this package
 R-TTR
 R-crul
-R-httpuv
 R-httr
 R-magick
-R-processx
 R-qpdf
 R-quantmod
-R-remotes
 R-rhub
 R-rio
 R-rsconnect

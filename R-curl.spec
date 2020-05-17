@@ -4,7 +4,7 @@
 #
 Name     : R-curl
 Version  : 4.3
-Release  : 84
+Release  : 85
 URL      : https://cran.r-project.org/src/contrib/curl_4.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/curl_4.3.tar.gz
 Summary  : A Modern and Flexible Web Client for R
@@ -36,21 +36,22 @@ lib components for the R-curl package.
 
 %prep
 %setup -q -c -n curl
+cd %{_builddir}/curl
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1575395531
+export SOURCE_DATE_EPOCH=1589757513
 
 %install
-export SOURCE_DATE_EPOCH=1575395531
+export SOURCE_DATE_EPOCH=1589757513
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
