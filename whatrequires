@@ -1,15 +1,15 @@
 # This file contains recursive sources that require this package
 R-TTR
+R-credentials
 R-crul
 R-httr
 R-magick
+R-processx
 R-qpdf
 R-quantmod
-R-rhub
 R-rio
 R-rsconnect
 R-rversions
-R-tesseract
 R-usethis
 R-webmockr
 R-webutils
