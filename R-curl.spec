@@ -4,7 +4,7 @@
 #
 Name     : R-curl
 Version  : 4.3.2
-Release  : 94
+Release  : 95
 URL      : https://cran.r-project.org/src/contrib/curl_4.3.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/curl_4.3.2.tar.gz
 Summary  : A Modern and Flexible Web Client for R
@@ -41,10 +41,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1624487369
+export SOURCE_DATE_EPOCH=1626705268
 
 %install
-export SOURCE_DATE_EPOCH=1624487369
+export SOURCE_DATE_EPOCH=1626705268
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -143,3 +143,5 @@ R CMD check --no-manual --no-examples --no-codoc curl || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/curl/libs/curl.so
+/usr/lib64/R/library/curl/libs/curl.so.avx2
+/usr/lib64/R/library/curl/libs/curl.so.avx512
