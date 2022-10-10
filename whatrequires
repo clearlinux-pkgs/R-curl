@@ -5,12 +5,14 @@ R-crul
 R-googlesheets4
 R-httr
 R-magick
+R-processx
 R-qpdf
 R-quantmod
 R-rcmdcheck
 R-rio
 R-rsconnect
 R-rversions
+R-urlchecker
 R-usethis
 R-webfakes
 R-webmockr
