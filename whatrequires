@@ -2,8 +2,10 @@
 R-TTR
 R-credentials
 R-crul
+R-gdtools
 R-googlesheets4
 R-httr
+R-httr2
 R-magick
 R-processx
 R-qpdf
