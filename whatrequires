@@ -7,7 +7,6 @@ R-googlesheets4
 R-httr
 R-httr2
 R-magick
-R-processx
 R-qpdf
 R-quantmod
 R-rcmdcheck
