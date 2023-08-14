@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-curl
-Version  : 5.0.1
-Release  : 114
-URL      : https://cran.r-project.org/src/contrib/curl_5.0.1.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/curl_5.0.1.tar.gz
+Version  : 5.0.2
+Release  : 115
+URL      : https://cran.r-project.org/src/contrib/curl_5.0.2.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/curl_5.0.2.tar.gz
 Summary  : A Modern and Flexible Web Client for R
 Group    : Development/Tools
 License  : MIT
@@ -44,10 +44,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1686329616
+export SOURCE_DATE_EPOCH=1692030648
 
 %install
-export SOURCE_DATE_EPOCH=1686329616
+export SOURCE_DATE_EPOCH=1692030648
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -142,6 +142,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/curl/tests/testthat/test-path.R
 /usr/lib64/R/library/curl/tests/testthat/test-post.R
 /usr/lib64/R/library/curl/tests/testthat/test-progress.R
+/usr/lib64/R/library/curl/tests/testthat/test-seek.R
 /usr/lib64/R/library/curl/tests/testthat/test-upload.R
 /usr/lib64/R/library/curl/tests/testthat/test-winssl.R
 /usr/lib64/R/library/curl/tests/testthat/test-writer.R
