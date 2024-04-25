@@ -4,6 +4,7 @@ R-credentials
 R-crul
 R-gdtools
 R-googlesheets4
+R-gridtext
 R-httr
 R-httr2
 R-magick
@@ -11,6 +12,7 @@ R-pxweb
 R-qpdf
 R-quantmod
 R-rcmdcheck
+R-rhub
 R-rio
 R-rotl
 R-rsconnect
