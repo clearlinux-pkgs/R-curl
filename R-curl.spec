@@ -7,7 +7,7 @@
 #
 Name     : R-curl
 Version  : 5.2.3
-Release  : 123
+Release  : 124
 URL      : https://cran.r-project.org/src/contrib/curl_5.2.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/curl_5.2.3.tar.gz
 Summary  : A Modern and Flexible Web Client for R
