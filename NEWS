@@ -1,3 +1,9 @@
+6.2.0
+ - MacOS: we have temporarilyy switched to a static build of libcurl 8.11.1 until
+   apple updates their very buggy libcurl (#376)
+ - Fix LTO error for R_multi_setopt
+ - Fix parsing of #fragment links in curl_parse() (#366)
+
 6.1.0
  - Fix a rchk bug
  - Enable CURLOPT_PIPEWAIT by default to prefer multiplex when possible
