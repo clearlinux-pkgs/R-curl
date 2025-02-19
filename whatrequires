@@ -15,8 +15,10 @@ R-rcmdcheck
 R-rhub
 R-rio
 R-rotl
+R-rredlist
 R-rsconnect
 R-rversions
+R-taxize
 R-urlchecker
 R-usethis
 R-webfakes
